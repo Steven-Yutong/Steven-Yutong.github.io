@@ -3,7 +3,9 @@
  * https://github.com/stevenjoezhang/live2d-widget
  */
 
+var say;
 function loadWidget(config) {
+	say = showMessage;
 	let { waifuPath, apiPath, cdnPath } = config;
 	let useCDN = false, modelList;
 	if (typeof cdnPath === "string") {
